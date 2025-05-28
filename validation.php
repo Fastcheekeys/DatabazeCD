@@ -14,8 +14,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $password = isset($_POST['password']) ? $_POST['password'] : '';
 
     //údaje
-    $validUsername = 'estetikaffjuceku';
-    $validPassword = 'Apatosaurus16-';
+    $validUsername = 'username';
+    $validPassword = 'P@ssw0rd';
 
     // Porovnání hash hodnot zadaných údajů a přednastavených údajů
     if (generateHash($username) === generateHash($validUsername) &&
