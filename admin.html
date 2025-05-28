@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Databázová aplikace na CDčka</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="container pt-5">
+  <!-- Formulář pro zadávání nových CD -->
+  <form id="form-container">
+    <h1><i class="bi bi-disc"></i> Databáze vašich CD</h1>
+    <div class="row g-3 mt-3 mb-3">
+      <div class="col">
+        <input type="text" id="titelInput" class="form-control" placeholder="Název CDčka">
+      </div>
+      <div class="col">
+        <input type="text" id="interpretInput" class="form-control" placeholder="Interpret">
+      </div>
+      <div class="col">
+        <input type="number" id="yearInput" class="form-control" placeholder="Rok vydání">
+      </div>
+    </div>
+    <button id="addBtn" class="btn btn-outline-dark"><i class="bi bi-database-add"></i> Přidat CD</button>
+    <!-- Nové tlačítko pro načtení dat z externího JSON souboru -->
+    <button id="loadJsonBtn" type="button" class="btn btn-outline-info ms-3"><i class="bi bi-cloud-download"></i> Načíst data</button>
+  </form>
+
+  <!-- Tabulka -->
+  <table id="cdTable" class="table table-dark mt-5">
+    <thead>
+      <tr>
+        <th class="d-none">ID</th>
+        <th>Název</th>
+        <th>Interpret</th>
+        <th>Rok vydání</th>
+        <th>Akce</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Dynamicky generováno pomocí JavaScriptu -->
+    </tbody>
+    
+  </table>
+  <footer>
+      <div class="row">
+          <div class="d-flex justify-content-center hstack gap-3 position-absolute bottom-0 end-0 bg-light p-3">
+              <p>Design: Matěj Rešl</p>
+              <p>Developed: Matěj Rešl</p>
+              <a href="https://admin.endora.cz/" target="_blank" class="link-dark text-decoration-none">Powered: Endora</a>
+          </div>
+      </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

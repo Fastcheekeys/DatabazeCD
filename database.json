@@ -1,0 +1,17 @@
+{
+    "cdData": [
+        {
+            "id": 3,
+            "nazev": "Paranoid",
+            "interpret": "Black Sabbath",
+            "rok": "1970"
+        },
+        {
+            "id": 4,
+            "nazev": "Powerslave",
+            "interpret": "Iron Maiden",
+            "rok": "1980"
+        }
+    ],
+    "nextId": 5
+}
